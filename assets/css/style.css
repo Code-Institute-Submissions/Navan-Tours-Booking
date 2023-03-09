@@ -13,14 +13,24 @@ header {
     text-align: center;
 }
 
+h1 {
+    padding: 15px;
+}
+
 h2 {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 /* ---------------------------------------- MENU */
 
 .menu {
     text-align: center;
+    background-color: black;
+    color: white;
+}
+
+menu li:hover {
+    background-color: blue;
 }
 
 /* ---------------------------------------- FOOTER */
@@ -31,8 +41,14 @@ footer {
 
 p {
     font-size: 1.2em;
-    color: white;
+    color: rgb(14, 0, 0);
 }
+
+a {
+    text-decoration: none;
+}
+
+/* ---------------------------------------- CONTAINERS */
 
 .card-text {
     color: black;
@@ -50,6 +66,19 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+.container {
+
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }  
 
 /* ---------------------------------------- FORM */
 
