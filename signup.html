@@ -8,6 +8,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Tours</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_M5CoI6SoX0E6FeHxx");
+      emailjs.send("gmail", "Tour",{name:"Tom",
+      notes: "Tour Booking"});
+   })();
+</script>
+
 </head>
 
 <body>
@@ -18,7 +29,6 @@
     <nav class="navbar navbar-light navbar-expand-sm bg-light">
     <ul class="navbar-nav mr-auto">
         <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
-        <li class="nav-item mr-2"><a class="nav-link" href="tourinfo.html" target="_blank">Tour Information</a></li>
         <li class="nav-item mr-2"><a class="nav-link" href="signup.html">Sign up for a Tour!</a></li>
     </ul>
   </div>
@@ -55,9 +65,6 @@
           <li class="mb-1">
             <a href="signup.html" style="color: #000a99;"><h5>Book a tour</h5></a>
           </li>
-          <li>
-            <a href="tourinfo.html" target="_blank" style="color: #000a99;"><h5>Tour Info</h5></a>
-          </li>
         </ul>
       </div>
       <div class="col-lg-3 col-md-6 mb-4">
@@ -66,11 +73,11 @@
           <tbody>
             <tr>
               <td>Mon - Fri:</td>
-              <td>8am - 9pm</td>
+              <td>10am & 2pm</td>
             </tr>
             <tr>
-              <td>Sat - Sun:</td>
-              <td>8am - 1am</td>
+              <td>Sat:</td>
+              <td>8am, 10am & 2pm</td>
             </tr>
           </tbody>
         </table>
